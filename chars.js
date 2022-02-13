@@ -59,7 +59,7 @@ const LOWER_CHARS = {
 
 const random = (max, min) => Math.floor(Math.random() * (max - min) + min);
 
-function short_id() {
+function generate_short_url() {
     const iterate = random(8, 5);
 
     let chars = '';
@@ -67,8 +67,6 @@ function short_id() {
     for (let i = 0; i < iterate; i++) {
 
         const d = Math.floor(Math.random() * 3)
-
-        console.log(d);
 
         switch (d) {
             case 0: {
@@ -101,4 +99,4 @@ function short_id() {
 
 }
 
-module.exports = short_id;
+module.exports = generate_short_url;

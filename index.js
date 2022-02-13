@@ -18,10 +18,10 @@ app.use(function fiveHundredHandler (err, req, res, next) {
 })
 
 // Start server
-app.listen(1234, function (err) {
+app.listen(8080, function (err) {
   if (err) {
     return console.error(err)
   }
 
-  console.log('Started at http://localhost:1234')
+  console.log('Started at http://localhost:8080')
 })

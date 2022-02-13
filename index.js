@@ -40,7 +40,7 @@ router.post('/upload', upload.single('image'), function (req, res) {
 
   console.log(req.file);
 
-  res.json(`${base_url}images/${short}`);
+  res.send(base_url + "images/" + short);
 
 });
 

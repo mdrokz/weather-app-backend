@@ -1,0 +1,24 @@
+{
+  "name": "weather-app-backend",
+  "version": "1.0.0",
+  "description": "",
+  "author": "mdrokz <33598169+mdrokz@users.noreply.github.com>",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdrokz/weather-app-backend"
+  },
+  "scripts": {
+    "start": "./bin/app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "http-errors": "^2.0.0",
+    "pino": "^7.6.5",
+    "pino-http": "^6.6.0",
+    "pino-pretty": "^7.5.1"
+  }
+}

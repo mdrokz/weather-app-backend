@@ -1,5 +1,7 @@
 'use strict'
-const express = require('express')
+const express = require('express');
+
+const multer = require('multer');
 
 const upload = multer({ dest: './images/' });
 
@@ -16,13 +18,11 @@ const Router = express.Router;
 
 const router = new Router();
 
-router.post('/upload', upload.single('file'), function (req, res) {
+router.post('/upload', upload.single('image'), function (req, res) {
 
-  console.log(req.file, res);
+  console.log(req.file,req);
 
 });
-
-
 
 
 app.use('/api', router);
